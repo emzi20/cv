@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>CV</title>
     <script src="jquery.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="Stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -15,13 +18,15 @@
             <li><a href="#passion">Pasja</a><li>
             <li><a href="#contact">Kontakt</a><li>
           </ul>
+          <span id='responsiveMenu'>MENU</span>
         </nav>
       <header>
         <div>
-          <img src="img/cv.jpg">
+          <img id="cv320" src="img/cv320.jpg">
+          <img id="cv" src="img/cv.jpg">
           <h1 id="top">Michał Ziemichód</h1>
           <div>
-            <p>Moim celm jest zostać forn-end developer</p>
+            <p>Moim celm jest zostać Fron-End Developer</p>
           </div>
           <p id="quotation">"I don't stop when I'm tired. <br>
              I stop when I done."</p>
@@ -32,7 +37,7 @@
         <article>
           <div class="aboutMe">
             <h1 id="aboutMe">O mnie</h1>
-            <p>Cześć. jestem Michał pochodzę z Miasteczka Krajeńskiego. Obecnie pracuje jako Technolog w firmie produkującej meble tapicerowane. W wolnym czasue zajmuję się nauką technologi webowych.
+            <p>Cześć, jestem Michał pochodzę z Miasteczka Krajeńskiego. Obecnie pracuje jako Technolog w firmie produkującej meble tapicerowane. W wolnym czasie zajmuję się nauką technologi webowych.
             </p>
           </div>
         </article>
@@ -70,21 +75,23 @@
       </section>
       <section>
          <article>
-            <div class="aboutMe">
+          <div class="aboutMe">
             <h1 id="passion">Pasja</h1>
+            <p>
+               Moją pasją jest Triathlon. Zacząłem sie interesować tą dyscypliną po ukończeniu maratonu. Wtedy za bradzo jeszcze nie wiedziałem z czym to się je. Trochę poczytałem i swierdziłem, że warto spróbować swoich możliwości. 
+            </p>
+            <p>
+               Początkowo potrafiłem przepłynąć maksymalnie 25m na basenie. Rowerem jakim dysponowałem był góral, dodatkowo był nie w pełni sprawny. 6 miesiecy basenu i jazdy na rowerze pozwoliło mi na ukonczenie pierwszego triathlonu. Satysfakcja z ukonczonych zawodów... ogromna. I tak do dzisiaj ta pasja toważysz mi każdego dnia. 
+            </p>
             <img src="img/run.jpg">
-            <p>
-               Moją pasją jest Triathlon. Zacząłem sie interesować tą dyscypliną po ukonczeniu maratonu. Wtedy za bradzo jeszcze nie wiedziałem z czym to się je. Trochę poczytałem i swierdzialem TO DO DZIEŁA. 
-            </p>
-            <p>
-               Na tym etapie potrafiłem przepłynąc maksymalnie 25m na basenie. A rower jaki miałem to góral który był nie sprawny. 6 miesiecy basenu i jazdy na rowerze pozwoliło mi na ukonczenie pierwszego triathlonu. Satysfakcja z ukonczonych zawodów... ogromna. I tak do dzisiaj ta pasja toważysz mi każdego dnia... 
-            </p>
-            <h2>Wyniki</h2>
-            <ul>
-              <li>1/4 ironman - 3:48h</li>
-              <li>maraton - 3:49h</li>
-              <li>pół maraton - 1:42h</li>
-            </ul>
+            <div id="score">
+              <h2>Wyniki</h2>
+              <ul>
+                <li>1/4 ironman - 3:48h</li>
+                <li>maraton - 3:49h</li>
+                <li>pół maraton - 1:42h</li>
+              </ul>
+            </div>
           </div>
           </article>
       </section>

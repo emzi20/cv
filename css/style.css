@@ -13,26 +13,6 @@ nav
 	z-index: 1;
 }
 
-header div{
-	width: 100%;
-	height: 950px;
-	margin-left: auto;
-	margin-right: auto;
-    position: sticky;
-}
-
-header img
-{
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	z-index: -1;
-	margin-bottom: 10px;
-	opacity: 0.6;
-}
-
-
 #menu
 {
 	margin: 0px;
@@ -44,26 +24,46 @@ header img
 	list-style-type: none;
 }
 
-#menu li
-{
-	display: inline-block;
-	padding-left: 30px;
-	padding-right: 30px;	
-}
-
 #menu a
 {
 	list-style-type: none;
 	text-decoration: none;
 	font-size: 15px;
 	color: #fff;
-	font-size: 15px;
 }
 
 #menu a:hover
 {
 	cursor: pointer;
 	color: #000;
+}
+
+header div{
+	width: 100%;
+	height: 950px;
+	margin-left: auto;
+	margin-right: auto;
+    position: sticky;
+}
+
+header div div
+{
+	position: absolute;
+	font-size: 20px;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+header img
+{
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: -1;
+	margin-bottom: 10px;
+	opacity: 0.6;
 }
 
 #top
@@ -80,19 +80,6 @@ header img
 	font-size: 50px;
 	letter-spacing: 3px;
 }
-
-header div div
-{
-	position: absolute;
-	top: 18%;
-	left: 50%;
-	width: 40%;
-	font-size: 20px;
-	font-size: 20px;
-	font-style: italic;
-	letter-spacing: 2px;
-}
-
 
 #quotation
 {
@@ -112,22 +99,7 @@ h1
 	font-size: 35px;
 	padding-top: 20px;
 	margin-top: 5px;
-	height: 34px;
 }
-
-.aboutMe
-{
-	padding: 20px 20px 100px 20px;
-	margin: 30px 120px;
-	background-color: #777777;
-	font-size: 20px;
-	line-height: 30px;
-
-	-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
-}
-
 
 .aboutMe ul
 {
@@ -139,14 +111,6 @@ h1
 {
 	padding-top: 15px;
 	list-style-type: none;
-}
-
-img
-{
-	width: 400px;
-	float: left;
-	padding-right: 50px;
-	margin-bottom: 100px;
 }
 
 h2
@@ -161,14 +125,7 @@ footer h1
 	font-size: 25px;
 }
 
-footer div
-{
-	text-align: center;
-	line-height: 60px;
-	border-top: 2px solid #fff;
-	margin-top: 100px;
-	background-color: #777777;
-}
+
 
 #up
 {
@@ -185,4 +142,217 @@ footer div
 #up:haver
 {
 	cursor: pointer;
+}
+
+footer div
+{
+	text-align: center;
+	line-height: 60px;
+	border-top: 2px solid #fff;
+	margin-top: 100px;
+	background-color: #777777;
+	clear: both;
+}
+
+
+@media only screen and (min-width: 770px){
+	#cv320
+	{
+		display: none;
+	}
+
+	#responsiveMenu
+	{
+		display: none;
+	}
+
+	header div div
+	{
+		top: 18%;
+		left: 50%;
+		width: 40%;
+	}
+
+	#menu li
+	{
+		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;	
+	}
+
+	.aboutMe
+	{
+		padding: 20px 20px 100px 20px;
+		margin: 30px 120px;
+		background-color: #777777;
+		font-size: 20px;
+		line-height: 30px;
+		-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+	}
+
+
+	img
+	{
+		width: 400px;
+		padding-right: 50px;
+		margin-bottom: 100px;
+	}
+
+	#score
+	{
+		float: right;
+		margin-right: 70px;
+		margin-top: 60px;
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 641px){
+	#cv320
+	{
+		display: none;
+	}
+
+	#responsiveMenu
+	{
+		display: none;
+	}
+
+	header div div
+	{
+		top: 18%;
+		left: 50%;
+		width: 40%;
+	}
+
+	#menu li
+	{
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;	
+	}
+
+	header div{
+		height: 700px;
+	}
+
+	#top
+	{
+		font-size: 35px;
+	}
+
+	#quotation
+	{
+		top: 550px;
+	}
+
+	.aboutMe
+	{
+		padding: 20px 20px 100px 20px;
+		margin: 30px 120px;
+		background-color: #777777;
+		font-size: 20px;
+		line-height: 30px;
+		margin: 5px 5px;
+		-webkit-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.75);
+	}
+
+	#score
+	{
+		float: right;
+		margin-right: 70px;
+		margin-top: 60px;
+	}
+
+
+	img
+	{
+		width: 400px;
+		padding-right: 50px;
+		margin-bottom: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 640px){
+	#cv
+	{
+		display: none;
+	}
+
+	#responsiveMenu
+	{
+		margin-left: 80%;
+	}
+
+	header div div
+	{
+		top: 18%;
+		left: 5%;
+		width: 50%;
+	}
+
+	#menu
+	{
+		text-align: right;
+		padding-right: 40px;
+		display: none;
+	}
+
+	#menu li
+	{
+		padding-top: 5px
+		padding-right: 10px;	
+	}
+
+	#menu a
+	{
+		font-size: 30px;
+	}
+
+
+	header div{
+		height: 480px;
+	}
+
+	#top
+	{
+		padding-left: 10px;
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		font-size: 20px;
+		width: 90%;
+	}
+
+	#quotation
+	{
+		top: 380px;
+		left: 1%;
+		margin: 5px;
+		font-size: 15px;
+	}
+
+	.aboutMe
+	{
+		background-color: #777777;
+		padding: 10px;
+		padding-top: 60px;
+		margin-top: 60px;
+		font-size: 15px;
+		line-height: 30px;
+		min-height: 480px;
+	}
+
+	img
+	{
+		width: 100%;
+		float: left;
+		margin-bottom: 50px;
+	}
+
 }

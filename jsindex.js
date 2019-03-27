@@ -5,6 +5,11 @@ $(function() {
   	let target = this.hash;
   	let $target = $(target);
 
+    if($(window).width()<641){
+        $('#responsiveMenu').show();
+        $('#menu').hide();
+      }
+
   	$('html, body').animate({
   		'scrollTop' : $target.offset().top-70
   	}, 1000, 'swing', function(){
@@ -29,6 +34,13 @@ $(function() {
 	  {
 	  	$("#up").hide()
 	  }
+  })
+
+
+  $('#responsiveMenu').on('click', function(){
+    $('#responsiveMenu').hide();
+    $('#menu').show();
+
   })
 
 });
